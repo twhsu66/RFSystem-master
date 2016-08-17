@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="地址:"
+                android:id="@+id/res_textView1"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="姓名:"
+                android:id="@+id/customer"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameEDText"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="電話:"
+                android:id="@+id/res_textView3"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tel"
+                android:layout_column="2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="生日:"
+                android:id="@+id/birthday"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adultEDText"
+                android:layout_column="2"/>
+
+        </TableRow>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+
+            android:id="@+id/ level "
+            android:layout_centerInParent="true"
+            >
+            <RadioButton
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:text=" VIP "
+                android:textSize="25sp"
+                android:id="@id/ VIP "          />
+            <RadioButton
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:text="一般 "
+                android:textSize="25sp"
+                android:id="@id/ general "          />
+
+            <RadioButton
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:text="黑名單"
+                android:textSize="25sp"
+                android:id="@+id/ awkward "          />
+        </RadioGroup>
+    </TableLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04">
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageButton"
+            android:layout_gravity="left"
+            android:src="@drawable/updata" />
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageButton1"
+            android:layout_gravity="center"
+            android:src="@drawable/compile" />
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="128dp"
+            android:id="@+id/imageButton2"
+            android:layout_gravity="right"
+            android:src="@drawable/del" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="存檔"
+            android:gravity="center"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="編輯"
+            android:gravity="center"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="刪除"
+            android:gravity="center"
+            android:layout_column="1" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
